@@ -11,6 +11,7 @@
 		46554B4E2A3A3332001F9126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46554B4D2A3A3332001F9126 /* ContentView.swift */; };
 		46554B502A3A3333001F9126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46554B4F2A3A3333001F9126 /* Assets.xcassets */; };
 		46554B532A3A3333001F9126 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46554B522A3A3333001F9126 /* Preview Assets.xcassets */; };
+		46554B5A2A3A388F001F9126 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46554B592A3A388F001F9126 /* TimeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		46554B4D2A3A3332001F9126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		46554B4F2A3A3333001F9126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46554B522A3A3333001F9126 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46554B592A3A388F001F9126 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				46554B4D2A3A3332001F9126 /* ContentView.swift */,
 				46554B4F2A3A3333001F9126 /* Assets.xcassets */,
 				46554B512A3A3333001F9126 /* Preview Content */,
+				46554B592A3A388F001F9126 /* TimeCounter.swift */,
 			);
 			path = ModelDataSwiftUI;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46554B5A2A3A388F001F9126 /* TimeCounter.swift in Sources */,
 				46554B4E2A3A3332001F9126 /* ContentView.swift in Sources */,
 				46554B4C2A3A3332001F9126 /* ModelDataSwiftUIApp.swift in Sources */,
 			);
