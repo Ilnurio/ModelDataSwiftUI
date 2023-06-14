@@ -9,19 +9,24 @@ import SwiftUI
 import Combine
 
 final class TimeCounter: ObservableObject {
+    var counter = 3
+    var buttonTitle = "Start"
+    
     let objectWillChange = ObservableObjectPublisher()
     
-    var counter = 3
     private var timer: Timer?
     
     func startTimer() {
-        timer = Timer.scheduledTimer(
-            timeInterval: 1,
-            target: self,
-            selector: #selector(updateCounter),
-            userInfo: nil,
-            repeats: true
-        )
+        if counter > 0 {
+            timer = Timer.scheduledTimer(
+                timeInterval: 1,
+                target: self,
+                selector: #selector(updateCounter),
+                userInfo: nil,
+                repeats: true
+            )
+        }
+        buttonDidTapped()
     }
     
     @objc private func updateCounter() {
@@ -29,6 +34,7 @@ final class TimeCounter: ObservableObject {
             counter -= 1
         } else {
             killTimer()
+            buttonTitle = "Reset"
         }
         
         objectWillChange.send()
@@ -37,5 +43,16 @@ final class TimeCounter: ObservableObject {
     private func killTimer() {
         timer?.invalidate()
         timer = nil
+    }
+    
+    func buttonDidTapped() {
+        if buttonTitle == "Reset" {
+            counter = 3
+            buttonTitle = "Start"
+        } else {
+            buttonTitle = "Wait..."
+        }
+        
+        objectWillChange.send()
     }
 }
