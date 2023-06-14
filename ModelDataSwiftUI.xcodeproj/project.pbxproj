@@ -64,9 +64,9 @@
 				46554B592A3A388F001F9126 /* TimeCounter.swift */,
 				46554B5B2A3A3F0B001F9126 /* LoginView.swift */,
 				46554B5D2A3A3FF2001F9126 /* UserSettings.swift */,
+				46554B5F2A3A411B001F9126 /* RootView.swift */,
 				46554B4F2A3A3333001F9126 /* Assets.xcassets */,
 				46554B512A3A3333001F9126 /* Preview Content */,
-				46554B5F2A3A411B001F9126 /* RootView.swift */,
 			);
 			path = ModelDataSwiftUI;
 			sourceTree = "<group>";
