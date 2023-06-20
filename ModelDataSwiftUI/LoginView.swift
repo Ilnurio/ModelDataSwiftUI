@@ -13,8 +13,9 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            TextField("Enter your name", text: $name)
+            TextField("Enter your name...", text: $name)
                 .multilineTextAlignment(.center)
+                .font(.system(size: 20))
             Button(action: login) {
                 HStack{
                     Image(systemName: "checkmark.circle")

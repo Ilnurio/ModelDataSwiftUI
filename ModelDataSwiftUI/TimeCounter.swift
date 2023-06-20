@@ -9,9 +9,9 @@ import SwiftUI
 import Combine
 
 final class TimeCounter: ObservableObject {
+    
     var counter = 3
     var buttonTitle = "Start"
-    
     let objectWillChange = ObservableObjectPublisher()
     
     private var timer: Timer?
@@ -26,6 +26,7 @@ final class TimeCounter: ObservableObject {
                 repeats: true
             )
         }
+        
         buttonDidTapped()
     }
     
