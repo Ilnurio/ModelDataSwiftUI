@@ -48,6 +48,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460335212A4B400F00B57393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46554B5D2A3A3FF2001F9126 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		460335222A4B402200B57393 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4603351F2A4B3C2400B57393 /* ButtonAppearanceModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		460335232A4B403F00B57393 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4603351B2A4B23FB00B57393 /* StorageManager.swift */,
+				46554B592A3A388F001F9126 /* TimeCounter.swift */,
+				460335192A4B22D200B57393 /* UserManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		460335242A4B406500B57393 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46554B5F2A3A411B001F9126 /* RootView.swift */,
+				4603351D2A4B2D5D00B57393 /* ButtonView.swift */,
+				46554B5B2A3A3F0B001F9126 /* LoginView.swift */,
+				46554B4D2A3A3332001F9126 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		46554B3F2A3A3332001F9126 = {
 			isa = PBXGroup;
 			children = (
@@ -68,17 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				46554B4B2A3A3332001F9126 /* ModelDataSwiftUIApp.swift */,
-				4603351B2A4B23FB00B57393 /* StorageManager.swift */,
-				4603351F2A4B3C2400B57393 /* ButtonAppearanceModifier.swift */,
-				460335192A4B22D200B57393 /* UserManager.swift */,
-				46554B4D2A3A3332001F9126 /* ContentView.swift */,
-				46554B592A3A388F001F9126 /* TimeCounter.swift */,
-				46554B5B2A3A3F0B001F9126 /* LoginView.swift */,
-				46554B5D2A3A3FF2001F9126 /* User.swift */,
-				46554B5F2A3A411B001F9126 /* RootView.swift */,
+				460335222A4B402200B57393 /* Modifiers */,
+				460335232A4B403F00B57393 /* Services */,
+				460335242A4B406500B57393 /* Views */,
+				460335212A4B400F00B57393 /* Models */,
 				46554B4F2A3A3333001F9126 /* Assets.xcassets */,
 				46554B512A3A3333001F9126 /* Preview Content */,
-				4603351D2A4B2D5D00B57393 /* ButtonView.swift */,
 			);
 			path = ModelDataSwiftUI;
 			sourceTree = "<group>";
