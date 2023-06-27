@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class UserSettings: ObservableObject {
-    @Published var isLoggedIn = false
+struct User: Codable {
+    var isLoggedIn = false
     var name = ""
 }
